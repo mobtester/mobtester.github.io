@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home UA</title>
+
+    <meta name="description" content="">
+    <meta name="keywords" content="" >
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/ico" >
+
+    <link href="fonts.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/960.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/header.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/fg.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/mobile.css" media="screen" rel="stylesheet" type="text/css">
+
+   <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+   <!--[if lt IE 9]><script type="text/javascript" src="js/html5.js"></script><![endif]-->
+   <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+   <script type="text/javascript" src="js/currency-autocomplete.js"></script>
+   <script type="text/javascript" src="js/fg.js"></script>
+</head>
+
+<body class="tutorLandingPage tutorLandingPageUA autocompleteBig">
+
+    <div id="Wrap">
+    
+        <header id="Header">
+            <div class="WidthPage">
+
+                <div>
+                    <a id="logo" href="/" title="Preply">
+                        <span>
+                    Preply
+                  </span>
+                    </a>
+                </div>
+                <div class="SignLogin">
+                    <span id="languageSelect" class="fl tooltipContextOpen">
+                  <a href="javascript:void(0);" class="underlineDashedBlack">
+                    <span class="change_language" style="text-transform: uppercase;">
+                      ru
+                    </span>
+                    </a>
+                    <div class="tooltipContext languages" style="display:none;">
+                        <!--span class="current">
+            ru
+            </span-->
+                        <span class="currentLang" style="text-transform: uppercase;">
+                                        ru
+                                      </span>
+                        <a onclick="javascript:$.tutorsApp.commonView.trackClickLanguage(event,'en');" href="javascript:void(0);" data-url="/language/en?next=en/" class="underline" style="text-transform: uppercase;">
+                            <span>
+                                          En
+                                        </span>
+                        </a>
+                        <a onclick="javascript:$.tutorsApp.commonView.trackClickLanguage(event,'pl');" href="javascript:void(0);" data-url="/language/pl?next=pl/" class="underline" style="text-transform: uppercase;">
+                            <span>
+                                          Pl
+                                        </span>
+                        </a>
+                        <a onclick="javascript:$.tutorsApp.commonView.trackClickLanguage(event,'ua');" href="javascript:void(0);" data-url="/language/ua?next=ua/" class="underline" style="text-transform: uppercase;">
+                            <span>
+                                          Ua
+                                        </span>
+                        </a>
+
+                    </div>
+                    </span>
+                </div>
+                <div class="SignLogin">
+                    <a onclick="javascript:$.tutorsApp.commonView.trackClick(event,0)" class="Login underline fl" data-url="/login" title="Вход">
+                        <span>
+                    Вход
+                  </span>
+                    </a>
+                </div>
+                <div id="HeadBl">
+
+                    <a onclick="javascript:$.tutorsApp.commonView.trackClick(event,0)" data-url="/help" class="Help underline fl" title="Помощь">
+                        <span>
+                    Помощь
+                  </span>
+                    </a>
+                </div>
+                <nav id="nav">
+                    <a href="/moscow/repetitory" class="" title="">
+                        <span>
+                    Репетиторы
+                  </span>
+                    </a>
+
+                    <a href="/moscow/vakancii-dlya-repetitorov-angliyskogo-yazyka" title="Вакансии" class="">
+                        <span>
+                    Вакансии
+                  </span>
+                    </a>
+                </nav>
+                <div id="subnav" style="float: right;margin-right: 30px; margin-left: 0px;">
+
+                    <a class="iRequest underline leaveGenericRequest" href="#" title="Помощь">
+                        <span>
+                              Разместить заявку
+                            </span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        
+
+        <div id="Main">
+            <div class="WidthPage screenBlock">
+                <div class="mainScreen">
+                    <h1>Найдите репетитора английского<br/>или других предметов</h1>
+                    <p class="text">Самая современная платформа для поиска индивидуальных<br/>преподавателей на дому и по Скайпу</p>
+                </div>
+                
+                <div class="searchBoxBl">
+                    <div class="searchBox">
+                        <div class="autocomplete_languages">
+                            <input type="text" id="autocomplete_languages" class="searchBoxInp" placeholder="Выберите предмет"/>
+                        </div>
+                        <div class="autocomplete_cities">
+                            <input type="text" id="autocomplete_cities" class="searchBoxInp" placeholder="Выберите город"/>
+                        </div>
+                        <button class="btn btn-danger">Найти</button>
+                    </div>
+                    <p class="gray">Например, <a href="" class="underlineDashed"><span>английский язык</span></a></p>
+                </div>
+            </div>
+            
+            <div class="popularCitiesLine">
+                <div class="WidthPage">
+                    <a href="#" class="underline flagMoscow"><span>Москва</span></a>
+                    <a href="#" class="underline flagSP"><span>Санкт-Петербург</span></a>
+                    <a href="#" class="underline flagKiev"><span>Киев</span></a>
+                    <a href="#" class="underline flagWarszava"><span>Варшава</span></a>
+                    <a href="#" class="underlineBlack"><span>Все города</span></a>
+                    
+                    <a href="#" class="underline fr icSkype2"><span>Скайп-репетиторы</span></a>
+                </div>
+            </div>
+            <div class="counterTestimonial">
+                <div class="WidthPage">
+                    <div class="peopleCounter">
+                        <div><span>1457</span></div><i>учеников уже<br/>
+                        нашли репетитора</i>
+                    </div>
+                    <div class="testimonialBl">
+                        <img src="images/victor.png" alt="" class="avaCircle" />
+                        <div class="testimonialBlText">
+                            <p><i>«С помощью сервиса Preply нашел носителя английского языка из Канады. Рекомендую сервис для поиска нормальных преподавателей.»</i></p>
+                            <p><b>Виктор Карпенко</b>, владелец компании Seoprofy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="featureBlock clearFix">
+                <h2>Всего 3 шага, чтобы найти репетитора</h2>
+                <div>
+                    <h4>Выберите репетитора</h4>
+                    <p>Используйте фильтры поисковой системы,<br/>чтобы найти репетиторов, подходящих<br/>под ваши бюджет и задачу.</p>
+                </div>
+                <div>
+                    <h4>Отправьте заявку</h4>
+                    <p>Свяжитесь с подходящими<br/>репетиторами, отправив заявки<br/>с уточняющей информацией.</p>
+                </div>
+                <div>
+                    <h4>Назначьте дату первого занятия</h4>
+                    <p>Когда репетитор принял заявку,<br/>оплатите первое занятие и система<br/>обменяет вас контактами.</p>
+                </div>
+                <p class="bigText">Или <a href="" class="underlineDashed"><span>оставьте заявку</span></a>, и репеaтиторы сами предложат вам свои услуги.</p>
+            </div>
+
+            <div class="separateLine"></div>
+            
+            <div class="WidthPage indexBl">
+                <h2>Популярные категории репетиторов</h2>
+                <p class="textBig">Сегодня на платформе работают более 3000 опытных репетиторов для учеников<br/>с любыми потребностями и достатком</p>
+                
+                <ul class="popularCategories mr100">
+                    <li><a href="" class="underline"><span>Английский язык</span></a><span class="count">23987</span></li>
+                    <li><a href="" class="underline"><span>Арабский язык</span></a><span class="count">14</span></li>
+                    <li><a href="" class="underline"><span>Испанский язык</span></a><span class="count">31</span></li>
+                    <li><a href="" class="underline"><span>Итальянский язык</span></a><span class="count">28</span></li>
+                </ul>
+                <ul class="popularCategories mr100">
+                    <li><a href="" class="underline"><span>Английский язык</span></a><span class="count">23987</span></li>
+                    <li><a href="" class="underline"><span>Арабский язык</span></a><span class="count">14</span></li>
+                    <li><a href="" class="underline"><span>Испанский язык</span></a><span class="count">31</span></li>
+                    <li><a href="" class="underline"><span>Итальянский язык</span></a><span class="count">28</span></li>
+                </ul>
+                <ul class="popularCategories">
+                    <li><a href="" class="underline"><span>Английский язык</span></a><span class="count">23987</span></li>
+                    <li><a href="" class="underline"><span>Арабский язык</span></a><span class="count">14</span></li>
+                    <li><a href="" class="underline"><span>Испанский язык</span></a><span class="count">31</span></li>
+                    <li><a href="" class="underline"><span>Итальянский язык</span></a><span class="count">28</span></li>
+                </ul>
+                
+                <div class="clearFix"></div>
+                <p class="textBig mt50">Разместите заявку и репетиторы сами предложат вам свои услуги.</p>
+                <p class="textCenter"><button class="btn btn-danger btn-danger-big">Разместить заявку</button></p>
+                
+            </div>
+
+            <div class="separateLine"></div>
+            
+            <div class="WidthPage indexBl">
+                <h2>Экономьте время, занимаясь онлайн</h2>
+                <p class="textBig">Несколько тысяч наших клиентов доказали возможность улучшить знание предмета,<br/>занимаясь с онлайн-репетиторами нашей платформы</p>
+                
+                <ul class="saveTimeBl">
+                    <li>
+                        <b>Экономия времени на транспорте</b>
+                        <p>Вы не тратите время на то, чтобы добраться к репетитору</p>
+                    </li>
+                    <li>
+                        <b>Свобода в выборе места занятий</b>
+                        <p>Можете заниматься в любом удобном месте, где есть интернет</p>
+                    </li>
+                    <li>
+                        <b>Иностранные репетиторы и носители языка</b>
+                        <p>Получаете доступ к базе иностранных репетиторов и носителей языка</p>
+                    </li>
+                </ul>
+                
+                <div class="linkBlock">
+                    <a href="" class="underline"><span>Английский по Скайпу</span></a><span class="blueBullet">•</span>
+                    <a href="" class="underline"><span>Носители английского по Скайпу</span></a><span class="blueBullet">•</span>
+                    <a href="" class="underline"><span>Русский по Скайпу</span></a><span class="blueBullet">•</span>
+                    <a href="" class="underline"><span>Немецкий по Скайпу</span></a><span class="blueBullet">•</span>
+                    <a href="" class="underline"><span>Итальянский по Скайпу</span></a>
+                    <br/>
+                    <a href="" class="underline"><span>Носители русского по Скайпу</span></a><span class="blueBullet">•</span>
+                    <a href="" class="underline"><span>Носители немецкого по Скайпу</span></a><span class="blueBullet">•</span>
+                    <a href="" class="underline"><span>Носители французского по Скайпу</span></a>
+                </div>
+            </div>
+
+            <div class="separateLine"></div>
+
+            <div class="WidthPage">
+                <!--fieldset class="hiwBl">
+                    <legend>Как работает платформа</legend>
+                    <ul class="hiwSteps">
+                        <li>
+                            <h4>Выберите подходящих репетиторов</h4>
+                            <p>Используйте фильтры поисковой системы, чтобы найти репетиторов, подходящих по месторасположению, цене, опыту, уровню и направлениям обучения.</p>
+                        </li>
+                        <li>
+                            <h4>Оставьте запрос урока репетиторам</h4>
+                            <p>На странице понравившихся репетиторов оставьте запросы уроков. Репетиторы получат вашу информацию напрямую, вы сможете уточнить все необходимые детали с помощью личных сообщений.</p>
+                        </li>
+                        <li>
+                            <h4>Оплатите первый урок и получите контакты</h4>
+                            <p>Когда репетитор принял вашу заявку, у вас появится функционал для оплаты первого урока. Сразу после оплаты система автоматически обменяет вас контактами.</p>
+                        </li>
+                    </ul>
+                </fieldset-->
+                
+                <div class="screenGuarantee">
+                    <h2>Гарантия возврата средств</h2>
+                    <p>Ваши средства находятся под надежной защитой нашей платформы. Если вам не подошел репетитор или занятие не состоялось, мы гарантируем бесплатное занятие с другим выбранным вами репетитором.</p>
+                </div>
+            </div>
+
+            <div class="separateLine"></div>
+
+            <div class="WidthPage indexBl">
+                <h2>Отзывы о платформе</h2>
+                <p class="textBig">Более 1000 настоящих отзывов учеников. Они уже нашли репетиторов<br/>с помощью нашей платформы</p>
+                
+                <div class="feedbackInfoBl">
+                    <div class="feedbackText"><p>«Я часто нахожусь в командировках, поэтому для меня не подходит формат занятий в офисе или в школе. Впервые попробывал скайп-уроки на Preply.com и это оказалось фантастически удобно. В каком бы городе я не находился - могу учиться по намеченной программе и не делать больших интервалов, когда забывается часть материала.»</p></div>
+                    <div class="feedbackUser">
+                        <img src="images/feedback1.jpg" alt="">
+                        <b>Алексей Малышев</b>
+                        <p>Владелец компании<br/>PayPlugin, Москва</p>
+                    </div>
+                </div>
+                <div class="feedbackInfoBl">
+                    <div class="feedbackText"><p>«Я очень волновалась за разговорную секцию теста TOEFL и решила подобрать себе репетитора.Сервис Preply познакомил меня с репетитором Артом из Ирландии.Он очень помог мне структурировать ответы и найти правильные слова для моих мыслей.После занятий с репетитором я чуствовала себя намного уверенее во время теста.»</p></div>
+                    <div class="feedbackUser">
+                        <img src="images/feedback2.jpg" alt="">
+                        <b>Ирина Купчинская</b>
+                        <p>Студентка КНУ им. Тараса<br/>Шевченко, Киев</p>
+                    </div>
+                </div>
+                <div class="feedbackInfoBl mr0">
+                    <div class="feedbackText"><p>«Стояла задача найти толкового репетитора по английскому языку. Изначально был нужен носитель языка. С помощью сервиса Preply нашел такого, носителя языка из Канады. Качеством обучения и его подготовкой вполне доволен. Рекомендую сервис для поиска нормальных преподавателей.»</p></div>
+                    <div class="feedbackUser">
+                        <img src="images/feedback3.jpg" alt="">
+                        <b>Вероника Литвинова</b>
+                        <p>Менеджер по развитию,<br/>Бостон</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="becomeTutorBl">
+                <div class="WidthPage">
+                    <div class="becomeTutor">
+                        <h2>Станьте репетитором Preply</h2>
+                        <p class="textBig">С нами вы сможете создать стабильный канал новых учеников<br/>и оптимально заполнить ваш график занятий.</p>
+                        <button class="btn btn-info">Создать профиль</button><a href="" class="underline iHowItWorks"><span>Подробнее о работе платформы</span></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!--div class="screenReviews">
+                <div class="WidthPage">
+                    <div class="screenReviewsText">
+                        <h2>Они уже нашли репетиторов с помощью нашей платформы</h2>
+                    </div>
+                    <div class="screenReviewsCarousel">
+                        <img src="images/irina.png" alt="" class="revAva" />
+                        <div class="screenReviewsCarouselText">
+                            <p><i>«Я часто нахожусь в командировках, поэтому для меня не подходит формат занятий в офисе или в школе. Впервые попробывал скайп-уроки на Preply.com.ua и это оказалось фантастически удобно. В каком бы городе я не находился - могу учиться по намеченной программе и не делать больших интервалов, когда забывается часть материала.»</i></p>
+                            <p><b>Алексей Малышев</b>, Москва</p>
+                        </div>
+                        <a href="#" class="revPrev revArrDisable">Prev</a>
+                        <a href="#" class="revNext">Next</a>
+                    </div>
+                </div>
+            </div-->
+            
+            <div class="pressLanding WidthPage">
+                <a href="javascript:void(0);" onclick="javascript:$.tutorsApp.commonView.trackClick(event,1)" data-url="http://www.the-village.ru/village/hopesandfears/cloud/158891-language-value" class="pressVillage"></a>
+
+                <a href="javascript:void(0);" onclick="javascript:$.tutorsApp.commonView.trackClick(event,1)" data-url="/static/images/forbes_press.jpg" class="pressForbes" target="_blank" alt="Forbes"></a>
+                <a href="javascript:void(0);" onclick="javascript:$.tutorsApp.commonView.trackClick(event,1)" data-url="http://blogs.wsj.com/venturecapital/2012/11/29/video-fitness-startup-founders-shake-up-the-act-of-shaping-up/" class="pressWSJ" target="_blank" alt="Washington Post"></a>
+                <a href="javascript:void(0);" onclick="javascript:$.tutorsApp.commonView.trackClick(event,1)" data-url="http://ain.ua/2012/10/19/98813" target="_blank" class="pressAin" alt="AIN"></a>
+                
+                <a href="javascript:void(0);" onclick="javascript:$.tutorsApp.commonView.trackClick(event,1)" data-url="http://focus.ua/lifestyle/248316/" class="pressFocus" target="_blank" alt="investgazeta"></a>
+                
+                <a href="javascript:void(0);" onclick="javascript:$.tutorsApp.commonView.trackClick(event,1)" data-url="http://www.kyivpost.com/guide/people/connecting-language-tutors-and-students-via-skype-323454.html" target="_blank" class="pressKP" alt="KyivPost"></a>
+            </div>
+            
+            <!--div class="blockShadowTop">
+                <div class="fourColBl clearFix">
+                    <div>
+                        <h4>Почему я могу доверять<br/>вашему сайту?</h4>
+                        <p>Preply — успешная молодая компания, которая работает на рынке США и Украины. Мы являемся частью всеукраинского бизнес акселератора EastLabs. О нас постоянно пишут такие бизнес издания как Forbes, Delo.ua, AIN, The Wall Street Journal и Kyiv Post.</p>
+                    </div>
+                    <div>
+                        <h4>Через сколько<br/>отвечает репетитор?</h4>
+                        <p>Каждый репетитор отвечает по разному, мы как платформа делаем все, чтоб мотивировать репетиторов отвечать быстрее и таким образом быстрее договариваться о первом занятии.</p>
+                    </div>
+                    <div>
+                        <h4>Когда ученик может<br/>
+                        оставить отзыв?</h4>
+                        <p>Ученик может оставить отзыв на занятия с репетитором, если он заказал и оплатил первый час учителя через нашу платформу. Обычно мы высылаем письмо, чтоб оставить отзыв после 20 дней после оплаты, чтоб у ученика было достаточно времени, чтоб познакомиться с репетитором.</p>
+                    </div>
+                    <div>
+                        <h4>Как производится оплата<br/>услуг репетитора?</h4>
+                        <p>Если уроки локальные, то оплата первого урока производится через систему, остальные уроки оплачиваются репетитору. Если уроки по Skype, то оплату можно производить через сервис Preply для удобства.</p>
+                    </div>
+                </div>
+                <div class="WidthPage waveLine"></div>
+                <div class="fourColBl clearFix">
+                    <div>
+                        <h3 class="haveQuestions">Остались вопросы?</h3>
+                    </div>
+                    <div class="phoneNumberBl">
+                        <p class="icPhoneBlue">+38 (044) 392 29 82</p>
+                    </div>
+                    <div class="linkSmallBl">
+                        <a href="#" class="underlineDashed icSkype"><span>Консультация по Скайпу</span></a>
+                    </div>
+                    <div class="linkSmallBl">
+                        <a href="#" class="underline iHowItWorks"><span>Все вопросы</span></a>
+                    </div>
+                </div>
+            </div-->
+
+        </div><!--! end of Main -->
+
+    </div><!--! end of #Wrap -->
+
+    <div class="overFooter" xmlns="http://www.w3.org/1999/html">
+        <div class="container_12">
+            <div class="grid_3">
+                <div class="h4">О нас</div>
+                <ul>
+                    <li><a href=""><span>Как это работает</span></a></li>
+                    <li><a href=""><span>Помощь</span></a></li>
+                    <li><a href=""><span>Блог</span></a></li>
+                    <li><a href=""><span>Вопросы и ответы</span></a></li>
+                    <li><a href=""><span>Партнерская программа</span></a></li>
+                    <li><a href=""><span>Работа для репетиторов</span></a></li>
+                    <li><a href=""><span>Работа для репетиторов в Москве</span></a></li>
+                </ul>
+            </div>
+            <div class="grid_3">
+                <div class="h4">Популярные города</div>
+                <ul>
+                    <li><a href=""><span>Репетиторы Москвы</span></a></li>
+                    <li><a href=""><span>Репетиторы Киева</span></a></li>
+                    <li><a href=""><span>Репетиторы Варшавы</span></a></li>
+                    <li><a href=""><span>Репетиторы Минска</span></a></li>
+                    <li><a href=""><span>Репетиторы Астаны</span></a></li>
+                    <li><a href=""><span>Репетиторы Санкт-Петербурга</span></a></li>
+                    <li><a href=""><span>Репетиторы Харькова</span></a></li>
+                    <li><a href=""><span>Репетиторы Алматы</span></a></li>
+                </ul>
+                <a class="underline" href=""><span>Все города</span></a>
+            </div>
+            <div class="grid_3">
+                <div class="h4">Репетиторы Украины</div>
+                <ul>
+                    <li><a href=""><span>Репетиторы Киева</span></a></li>
+                    <li><a href=""><span>Репетиторы Харькова</span></a></li>
+                    <li><a href=""><span>Репетиторы Львова</span></a></li>
+                    <li><a href=""><span>Репетиторы Днепропетровска</span></a></li>
+                    <li><a href=""><span>Репетиторы Запорожья</span></a></li>
+                    <li><a href=""><span>Репетиторы Одессы</span></a></li>
+                    <li><a href=""><span>Репетиторы Херсона</span></a></li>
+                    <li><a href=""><span>Репетиторы Николаева</span></a></li>
+                </ul>
+                <a class="underline" href=""><span>Все репетиторы Украины</span></a>
+            </div>
+            <div class="grid_3">
+                <div class="h4">Популярные предметы</div>
+                <ul>
+                    <li><a href=""><span>Репетиторы английского</span></a></li>
+                    <li><a href=""><span>Репетиторы-носители английского</span></a></li>
+                    <li><a href=""><span>Репетитор немецкого</span></a></li>
+                    <li><a href=""><span>Репетитор русского</span></a></li>
+                    <li><a href=""><span>Репетиторы французского</span></a></li>
+                    <li><a href=""><span>Репетиторы китайского</span></a></li>
+                    <li><a href=""><span>Репетиторы испанского</span></a></li>
+                    <li><a href=""><span>Репетиторы итальянского</span></a></li>
+                </ul>
+                <a class="underline" href=""><span>Все предметы</span></a>
+            </div>
+        </div>
+        <div class="container_12">
+            <div class="grid_3">
+                <div class="h4">Занятия по Скайпу</div>
+                <ul>
+                    <li><a href=""><span>Английкий по Скайпу </span></a></li>
+                    <li><a href=""><span>Носители английского по Скайпу</span></a></li>
+                    <li><a href=""><span>Немецкий по Скайпу</span></a></li>
+                    <li><a href=""><span>Русский по Скайпу</span></a></li>
+                    <li><a href=""><span>Французский по Скайпу</span></a></li>
+                    <li><a href=""><span>Итальянский по Скайпу</span></a></li>
+                    <li><a href=""><span>Испанский по Скайпу</span></a></li>
+                    <li><a href=""><span>Китайский по Скайпу</span></a></li>
+                </ul>
+                <a href="" class="underline"><span>Другие Скайп-репетиторы</span></a>
+            </div>
+            <div class="grid_3">
+                <div class="h4">Вакансии репетиторов</div>
+                <ul>
+                    <li><a href=""><span>Вакансии в Москве</span></a></li>
+                    <li><a href=""><span>Вакансии в Киеве</span></a></li>
+                    <li><a href=""><span>Вакансии в Варшаве</span></a></li>
+                    <li><a href=""><span>Вакансии в Санкт-Петербурге</span></a></li>
+                    <li><a href=""><span>Вакансии в Минске</span></a></li>
+                    <li><a href=""><span>Вакансии в Астане</span></a></li>
+                    <li><a href=""><span>Вакансии в Одессе</span></a></li>
+                    <li><a href=""><span>Вакансии в Екатеринбурге</span></a></li>
+                </ul>
+                <a href="" class="underline"><span>Все вакансии</span></a>
+            </div>
+
+            <div class="grid_3">
+                <h4>Поддержка</h4>
+                
+                <ul>
+                    <li><p class="gray">Возникли вопросы или трудности<br/>с поиском репетитора?</p></li>
+                    <li><a href="" class="underline iLetter"><span>support@preply.com</span></a></li>
+                </ul>
+                <h4>Мы в соц. сетях</h4>
+                <div class="socialButton socialButtonInline clearFix">
+                    <a href="http://vk.com/preply" class="vk"><span>&nbsp;</span></a>
+                    <a href="http://facebook.com/preplyCom" class="fbook"><span>&nbsp;</span></a>
+                    <a href="http://twitter.com/preplyCom" class="tweet"><span>&nbsp;</span></a>
+                    <a href="http://plus.google.com/+preplyua" class="gplus"><span>&nbsp;</span></a>
+                    <a href="http://www.pinterest.com/preply/" class="pinterest"><span>&nbsp;</span></a>
+                </div>
+            </div>
+            <div class="grid_3 vcard">
+                <div class="h4">Контактная информация</div>
+
+                <div class="footerFlag ruFlag"><span class="fn org">Preply</span> Россия</div>
+                <div class="footerPhone tel">+7 495 204 29 82</div>
+                <div class="footerAdres"><div class="adr">
+                        <span class="locality">Москва</span>,
+                        <span class="street-address">5-й Донской пр., 15, строение 5</span>
+                    </div> </div>
+
+                <div class="footerSep"></div>
+
+                <div class="footerFlag uaFlag"><span class="fn org">Preply</span> Украина</div>
+                <div class="footerPhone">+38 044 392 29 82</div>
+                <div class="footerAdres">Киев, ул. Льва Толстого, 3А, 4-й этаж</div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer id="Footer">
+        <div class="WidthPage">        
+        	<div id="copyright">&copy; 2012-2013 FindGuru, Inc.</div>
+			<!--a class="PreplyUS underline"><span>Preply в США</span></a-->
+            <div class="shareWithFriends">
+                <p>Поделиться с друзьями:</p>
+                <div><img src="images/recycled/fb.png" alt="" /></div>
+                <div><img src="images/recycled/tweet.png" alt="" /></div>
+                <div><img src="images/recycled/g_plus.png" alt="" /></div>
+            </div>      
+        </div>
+    </footer>
+    
+</body>
+</html>
