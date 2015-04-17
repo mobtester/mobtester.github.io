@@ -1,43 +1,3 @@
-/* start header */
- /*and (orientation:portrait)
-@media screen and (max-width: 780px) and (orientation:portrait) {
-    body{
-        min-width: 780px;
-    }
-    #Header{
-        margin-bottom: 1px;
-    }
-    .container_12, .container_16{
-        width: 780px;
-    }
-    .WidthPage{
-        width: 780px;
-    }
-    #HeadBl .Help,
-    #languageSelect,
-    .SmallBlock,
-    .breadcrumbs,
-    .seo-pre-footer{
-        display: none;
-    }
-    #currentCity{
-        margin-left: 10px;
-    }
-    #logo,
-    .copyright{
-        margin-left: 20px;
-    }
-    .smallcol-right .Block, .smallcol-right-big .Block, .smallcol-right .contBlock, .smallcol-right-big .contBlock{
-        width: 780px;
-        -webkit-border-radius: 0px;
-                border-radius: 0px;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-    }
-    #Main{
-        padding-bottom: 360px;
-    }
-}*/
 @media screen and (max-width: 640px){
     /* start search page */
     .WidthPage{
@@ -422,7 +382,8 @@
         margin: 0 0 20px 0;
         background-image: none;
     }
+    .about_tutor iframe{
+        width: 280px!important;
+    }
     /* end tutor info */
 }
-
-/* end header */
