@@ -1,5 +1,5 @@
 /* start header */
- /*and (orientation:portrait)*/
+ /*and (orientation:portrait)
 @media screen and (max-width: 780px) and (orientation:portrait) {
     body{
         min-width: 780px;
@@ -37,7 +37,7 @@
     #Main{
         padding-bottom: 360px;
     }
-}
+}*/
 @media screen and (max-width: 640px){
     /* start search page */
     .WidthPage{
