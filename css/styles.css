@@ -1,0 +1,741 @@
+@font-face {
+    font-family: 'CirceExtraLight';
+    src: url('../fonts/crc25.eot');
+    src: url('../fonts/crc25.eot') format('embedded-opentype'),
+         url('../fonts/crc25.woff') format('woff'),
+         url('../fonts/crc25.ttf') format('truetype'),
+         url('../fonts/crc25.svg#CirceExtraLight') format('svg');
+}
+@font-face {
+    font-family: 'CirceLight';
+    src: url('../fonts/crc35.eot');
+    src: url('../fonts/crc35.eot') format('embedded-opentype'),
+         url('../fonts/crc35.woff') format('woff'),
+         url('../fonts/crc35.ttf') format('truetype'),
+         url('../fonts/crc35.svg#CirceLight') format('svg');
+}
+@font-face {
+    font-family: 'CirceRegular';
+    src: url('../fonts/crc55.eot');
+    src: url('../fonts/crc55.eot') format('embedded-opentype'),
+         url('../fonts/crc55.woff') format('woff'),
+         url('../fonts/crc55.ttf') format('truetype'),
+         url('../fonts/crc55.svg#CirceRegular') format('svg');
+}
+@font-face {
+    font-family: 'CirceBold';
+    src: url('../fonts/circe-bold.eot');
+    src: url('../fonts/circe-bold.eot') format('embedded-opentype'),
+         url('../fonts/circe-bold.woff') format('woff'),
+         url('../fonts/circe-bold.ttf') format('truetype'),
+         url('../fonts/circe-bold.svg#CirceBold') format('svg');
+}
+@font-face {
+    font-family: 'CirceExtraBold';
+    src: url('../fonts/circe-extrabold.eot');
+    src: url('../fonts/circe-extrabold.eot') format('embedded-opentype'),
+         url('../fonts/circe-extrabold.woff') format('woff'),
+         url('../fonts/circe-extrabold.ttf') format('truetype'),
+         url('../fonts/circe-extrabold.svg#CirceExtraBold') format('svg');
+}
+/* reset */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {display: block;}
+audio, canvas, video {
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+}
+audio:not([controls]) {display:none;}
+html {
+    margin:0;
+    padding:0;
+    background:transparent;
+    height:100%;
+    overflow-y:scroll;
+}
+body {
+    font-size: 100%;
+    font-family: CirceRegular;
+    margin:0;
+    color:#333;
+    background-color: #fff;
+}
+form {margin:0;}
+a:focus {
+    outline:thin dotted;
+    outline:5px auto -webkit-focus-ring-color;
+    outline-offset:-2px;
+}
+a:hover, a:active {outline:0;}
+img {
+    vertical-align:top;
+    border:1px;
+    -ms-interpolation-mode:bicubic;
+}
+button,
+input,
+select,
+textarea {
+    margin:0;
+    font-size:100%;
+    vertical-align:middle;
+    font-family:"Helvetica Neue",Helvetica,Arial,Sans-Serif;
+}
+input[type="text"] {
+    font-size: 18px;
+}
+button, input {
+    *overflow:visible;
+    line-height:normal;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+    padding:0;
+    border:0;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor:pointer;
+    outline: 0;
+    -webkit-appearance:button;
+}
+textarea {
+    overflow:auto;
+    vertical-align:top;
+}
+
+strong, b {
+    font-weight: bold;,"Helvetica Neue",Helvetica,Arial,Sans-Serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color:#000;
+    font-weight: 400;
+    text-rendering:optimizelegibility;
+    margin:0;
+}
+h1 {
+    font-size:36px;
+    line-height:42px;
+    margin-bottom:10px;
+}
+h2 {
+    font-size:30px;
+    line-height:30px;
+    margin-bottom:10px;
+}
+h3 {
+    font-size:16px;
+    line-height:16px;
+    text-transform:uppercase;
+    margin-bottom:12px;
+    font-weight: bold;
+
+}
+h4 {
+    font-size:18px;
+    line-height:18px;
+    margin-bottom:10px;
+}
+.pr{
+    position: relative;
+}
+.link{
+    color: #0099cc;
+    text-decoration: none;
+}
+.link span{
+    line-height: 14px;
+    display: inline-block;
+    border-bottom: 1px solid rgba(0,154,204,.3);
+}
+.link:hover{
+    color: #e74c3c;
+}
+.link:hover span{
+    border-bottom: 1px solid rgba(231,76,60,.3);
+}
+.clearFix:after{
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.btnRed{
+    color: #fff;
+    font-family: CirceBold;
+    font-size: 24px;
+    line-height: 70px;
+    white-space: nowrap;
+    padding: 0px 50px;
+    border: none;
+    background-color: #e74c3c;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+    -webkit-transition: .1s linear;
+    -moz-transition: .1s linear;
+    -o-transition: .1s linear;
+    transition: .1s linear;
+}
+.btnRed:hover{
+    background-color: #ce3a2b;
+}
+.hint{
+    color: #fff;
+    font-size: 13px;
+    line-height: 18px;
+    position: absolute;
+    width: 160px;
+    padding: 7px 20px;
+    background-color: #e74c3c;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.hint:after{
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #e74c3c transparent transparent;
+
+    -webkit-transform: scale(1,0.8);
+    -moz-transform: scale(1,0.8);
+    -ms-transform: scale(1,0.8);
+    transform: scale(1,0.8);
+}
+.container{
+    width: 940px;
+    margin: 0px auto;
+}
+nav{
+    
+}
+nav > a{
+    color:#333;
+    font-family: CirceBold;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 24px 0px 19px 0px;
+    margin-right: 35px;
+    border-bottom: 5px solid #fff;
+}
+nav > a.active,
+nav > a:hover{
+    border-bottom: 5px solid #e74c3c;
+}
+#program, #how{
+    padding-top: 78px;
+}
+.promoScreen{
+    height: 440px;
+    overflow: hidden;
+    background: url('../images/promo_screen_bg.jpg') repeat-x top center;
+}
+.promoScreen .container{
+    position: relative;
+    height: 440px;
+    overflow: hidden;
+}
+.promoScreenText{
+    position: relative;
+    margin-top: 75px;
+}
+.promoScreenText .costParticipation{
+    text-align: left;
+    position: absolute;
+    top: 173px;
+    left: 360px;
+}
+.promoScreenText .costParticipation div{
+    color: #000;
+    left: 78px;
+}
+.promoScreenText p{
+    font-size: 18px;
+    line-height: 30px;
+}
+.promoScreenTutor{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.promoScreenNumbers{
+    height: 180px;
+    overflow: hidden;
+    background-color: #2b3d50;
+}
+.numCount{
+    color: #fff;
+    text-align: center;
+    position: relative;
+    float: left;
+    width: 112px;
+    height: 112px;
+    margin-top: 33px;
+    background: url('../images/promo_screen_number_bg.png') no-repeat top left;
+}
+.numCount span{
+    font-family: CirceLight;
+    font-size: 60px;
+    line-height: 120px;
+}
+.numCount div{
+    font-family: CirceBold;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 33px;
+    left: 140px;
+    width: 100px;
+}
+.countdown{
+    position: relative;
+    float: right;
+    width: 520px;
+    margin: 56px 120px 0px 0px;
+}
+.countdown .num{
+    text-align: center;
+    position: relative;
+    float: left;
+    width: 88px;
+    margin: 0px 20px;
+    
+}
+.countdown .num:after{
+    content: ':';
+    color: rgba(255,255,255,.5);
+    font-family: CirceLight;
+    font-size: 60px;
+    line-height: 60px;
+    position: absolute;
+    top: 0px;
+    right: -10px;
+}
+.countdown .num:first-child:after{
+    content: '';
+}
+.countdown .num:after{
+    content: ':';
+    color: rgba(255,255,255,.5);
+    font-family: CirceLight;
+    font-size: 60px;
+    line-height: 60px;
+    position: absolute;
+    top: -5px;
+    left: -136px;
+}
+.countdown .num span{
+    color: #fff;
+    font-family: CirceLight;
+    font-size: 60px;
+    line-height: 60px;
+    position: relative;
+}
+.countdown .num div{
+    color: #0099cc;
+    font-family: CirceBold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.countdown .brace{
+    color: rgba(255,255,255,.2);
+    font-family: CirceExtraLight;
+    font-size: 100px;
+    line-height: 100px;
+    position: absolute;
+    top: -17px;
+    right: -10px;
+}
+.countdown .startText{
+    color: #fff;
+    font-family: CirceBold;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 12px;
+    right: -120px;
+}
+.programLeft{
+    float: left;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.programRight{
+    float: left;
+    margin-top: 50px;
+}
+.programBl{
+    position: relative;
+    width: 350px;
+    min-height: 150px;
+    padding-left: 80px;
+}
+.programBl p{
+    color: #666;
+    font-size: 15px;
+    line-height: 24px;
+}
+.programBl:before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 80px;
+    height: 60px;
+    background-image: url('../images/ic_program.png');
+    background-repeat: no-repeat;
+}
+.ic1:before{
+    background-position: 0px 0px;
+}
+.ic2:before{
+    background-position: 0px -331px;
+}
+.ic3:before{
+    background-position: 0px -90px;
+}
+.ic4:before{
+    background-position: 0px -413px;
+}
+.ic5:before{
+    background-position: 0px -178px;
+}
+.ic6:before{
+    background-position: 0px -485px;
+}
+.ic7:before{
+    background-position: 0px -242px;
+}
+.ic8:before{
+    background-position: 0px -563px;
+}
+.costBl{
+    height: 170px;
+    margin-top: 80px;
+    background-color: #e2effb;
+}
+.costParticipation{
+    text-align: right;
+    position: relative;
+    float: left;
+    width: 70px;
+    margin: 60px 0px 0px -10px;
+}
+.costParticipation span{
+    font-size: 15px;
+    line-height: 18px;
+    display: inline-block;
+    margin-top: 6px;
+}
+.costParticipation div{
+    font-family: 'CirceLight';
+    font-size: 48px;
+    position: absolute;
+    top: -10px;
+    left: 88px;
+}
+.costText{
+    color: #666;
+    font-size: 15px;
+    line-height: 24px;
+    float: left;
+    width: 300px;
+    margin: 48px 0px 0px 180px;
+}
+.costBl .btnRed{
+    float: right;
+    margin-top: 50px;
+}
+.landingHowBl{
+    position: relative;
+    padding-bottom: 40px;
+}
+.landingHowBl:after{
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: 0px;
+    width: 106px;
+    height: 116px;
+    background-image: url('../images/pic_landing_how.png');
+    background-repeat: no-repeat;
+}
+.howBl1{
+    margin-top: 80px;
+}
+.howBl2{
+    margin-top: 25px;
+}
+.howBl3{
+    margin-top: 40px;
+}
+.howBl1:after{
+    background-position: 0px 0px;
+}
+.howBl2:after{
+    background-position: 0px -150px;
+}
+.howBl3:after{
+    background-position: 0px -298px;
+}
+.landingHowBl .textTitle{
+    color: #000;
+    font-size: 18px;
+    line-height: 30px;
+    float: left;
+    width: 240px;
+    margin-left: 160px;
+}
+.landingHowBl .text{
+    color: #666;
+    font-size: 15px;
+    line-height: 24px;
+    float: left;
+    width: 380px;
+    margin-left: 80px;
+}
+.landingHowBl p{
+    margin-top: 0px;
+}
+.landingHowBl .sep{
+    color: #999;
+    margin: 0px 5px;
+}
+.aboutTutor{
+    margin-top: 120px;
+    padding: 70px 0px 140px 0px;
+    background-color: #2b3d50;
+}
+.aboutTutor h2{
+    color: #fff;
+}
+.tutorBl{
+    float: left;
+    width: 265px;
+}
+.tutorReviews{
+    float: left;
+    width: 540px;
+    margin-left: 135px;
+}
+.aboutTutor p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 24px 0px;
+}
+.aboutTutor .textRed{
+    color: #e74c3b;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.tutorBl .textRed{
+    font-size: 18px;
+}
+.tutorBl .tutorPic{
+    width: 220px;
+    height: 220px;
+    margin: 50px 0px 20px 0px;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.tutorReviews div{
+    position: relative;
+    margin-top: 35px;
+}
+.tutorReviews div:after{
+    content: "«";
+    color: #e2effb;
+    font-family: 'CirceLight';
+    font-size: 60px;
+    line-height: 32px;
+    position: absolute;
+    top: 0px;
+    left: -50px;
+}
+.tutorReviews h2{
+    margin-bottom: 55px;
+}
+.pressLogo{
+    height: 58px;
+    padding: 55px 0px;
+    margin-bottom: 25px;
+}
+.pressLogo a{
+    display: inline-block;
+    height: 58px;
+    margin-right: 100px;
+    background-image: url('../images/press_index.png');
+    background-repeat: no-repeat;
+}
+.pressLogo a:last-child{
+    margin-right: 0px;
+}
+.kpPress{
+    width: 66px;
+    margin-left: 80px;
+    background-position: -398px 0px;
+}
+.deloPress{
+    width: 130px;
+    margin-left: 40px;
+    background-position: -517px 0px;
+}
+.focusPress{
+    width: 150px;
+    background-position: -692px 0px;
+}
+.forbesPress{
+    width: 119px;
+    background-position: 0px 3px;
+}
+.subscribeBl{
+    padding: 75px 0px 120px 0px;
+    background-color: #e2effb;
+}
+.subscribeTbl{
+    color: #666;
+    font-size: 15px;
+    line-height: 24px;
+    width: 860px;
+}
+.subscribeTbl .title{
+    color: #000;
+    font-size: 30px;
+    padding-bottom: 35px;
+}
+.subscribeTbl td{
+    padding: 10px 0px;
+}
+.subscribeTbl .f{
+    width: 80px;
+}
+.subscribeTbl .s{
+    width: 480px;
+}
+.subscribeTbl .t{
+    width: 300px;
+}
+.subscribeTbl .btnRed{
+    font-size: 18px;
+    line-height: 50px;
+    padding: 0px 35px;
+    margin-top: 10px;
+}
+.subscribeTbl .costParticipation{
+    float: none;
+    margin: 0px 0px 20px 0px;
+}
+.subscribeTbl .costParticipation span{
+    text-align: left;
+}
+.subscribeTbl .costParticipation div{
+    color: #000;
+    top: 15px;
+}
+.subscribeTbl .hint{
+    top: -6px;
+    left: 400px;
+}
+.inp{
+    color: #000;
+    font-family: 'CirceRegular';
+    line-height: 21px;
+    width: 360px;
+    padding: 10px;
+    height: 20px;
+    border: none;
+    background-color: #fff;
+}
+.selectBl{
+    position: relative;
+}
+.select{
+    color: #000;
+    font-size: 18px;
+    width: 360px;
+    height: 20px;
+    padding: 10px;
+    background: #fff url('../images/arr_select.png') no-repeat 355px 18px;
+    cursor: pointer;
+}
+.selectMenu{
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 380px;
+    background-color: #fff;
+}
+.selectMenu a{
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    width: 360px;
+    padding: 10px;
+}
+.selectMenu a:hover{
+    color: #fff;
+    background-color: #0099cc;
+}
+#footer{
+    color: #999;
+    font-size: 13px;
+    padding: 50px 0px;
+}
+#footer .container > div{
+    display: inline-block;
+}
+.copy{
+    width: 240px;
+}
+.createdBy{
+    float: right;
+}
+.createdBy img{
+    position: relative;
+    top: -3px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

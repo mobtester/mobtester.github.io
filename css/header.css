@@ -1,0 +1,545 @@
+#Header {
+    margin-bottom: 17px;
+	box-shadow:0 1px 2px rgba(0,0,0,.22); 
+	background:#EDEBE2;
+	background:-moz-linear-gradient(top, #F7F6F3 0%, #E2DFD1 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#F7F6F3), color-stop(100%,#E2DFD1));
+	background:-webkit-linear-gradient(top, #F7F6F3 0%,#E2DFD1 100%);
+	background:-o-linear-gradient(top, #F7F6F3 0%,#E2DFD1 100%);
+	background:-ms-linear-gradient(top, #F7F6F3 0%,#E2DFD1 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#F7F6F3', endColorstr='#E2DFD1',GradientType=0 );
+	background:linear-gradient(top, #F7F6F3 0%,#E2DFD1 100%);
+	}
+	#logo {
+		text-indent:-10000px;
+		float:left;
+		display:block;
+		width:120px;
+		height:29px;
+		margin:7px 0;
+		background:url(../images/site_logo.png) no-repeat 0 0;
+		}
+    #logo:active {
+        margin-top: 8px;
+    }
+    #currentCity{
+        position: relative;
+        float: left;
+        margin: 8px 0px 0px 20px;
+        padding: 6px 12px 6px 30px;
+        background: #e4e1d2 url('../images/icons.png') no-repeat 11px -3469px;
+        
+        box-shadow: 0px 1px 0px rgba(255,255,255,.5), inset 0px 2px 3px rgba(0,0,0,.15);
+        
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+        }
+        #currentCity.skypeIcon{
+            background-position: 10px -3516px;
+            }
+        #currentCity .underlineDashedBlack,
+        #languageSelect .underlineDashedBlack{
+            font-size: 13px;
+            }
+        #currentCity .underlineDashedBlack:hover,
+        #languageSelect .underlineDashedBlack:hover{
+            color: #333;
+            }
+            #currentCity .underlineDashedBlack:hover span,
+            #languageSelect .underlineDashedBlack:hover span{
+                border-bottom: 1px dashed rgba(0, 0, 0, .3);
+                }
+        #currentCity .underline,
+        #currentCity .tooltipContext b{
+            font-size: 13px;
+            white-space: nowrap;
+            display: block;
+            margin: 9px 30px;
+            }
+            #currentCity .tooltipContext .clearFix{
+                height: 1px;
+                margin-bottom: 15px;
+                overflow: hidden;
+                background-color: #eeede8;
+                }
+            #currentCity .tooltipContext .skypeTutor{
+                padding: 1px 0px 1px 20px;
+                margin: 14px 30px 14px 10px;
+                background: transparent url('../images/icons.png') no-repeat 0px -3522px;
+                }
+            #currentCity .tooltipContext:after,
+            #currentCity .tooltipContext:before{
+                left: 40px;
+            }
+    #languageSelect{
+        position: relative;
+        margin-right: 12px;
+        }
+        #languageSelect {
+            position: relative;
+            }
+            #languageSelect .langFlag{
+                margin-top: 2px;
+                margin-right: 7px;
+                box-shadow: 0px 1px 3px rgba(0,0,0,.2);
+                }
+            #languageSelect .tooltipContext{
+                top: 40px;
+                left: -10px;
+            }
+                #languageSelect .tooltipContext .underline,
+                #languageSelect .tooltipContext .currentLang{
+                    white-space: nowrap;
+                    display: block;
+                    margin: 8px 10px 0px 10px;
+                    }
+	#nav {
+	    float: left;
+	    margin-left: 20px;}
+		#nav a {
+			float:left;
+			border-right:1px solid #D1D0C7;
+			font-size:14px;
+			font-weight: bold;
+			line-height:44px;
+			color:#f8463d;
+			}
+		#nav a:hover {
+			background: #ffffff;
+			background: -moz-linear-gradient(top,  #ffffff 0%, #e4e1d2 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e4e1d2));
+			background: -webkit-linear-gradient(top,  #ffffff 0%,#e4e1d2 100%);
+			background: -o-linear-gradient(top,  #ffffff 0%,#e4e1d2 100%);
+			background: -ms-linear-gradient(top,  #ffffff 0%,#e4e1d2 100%);
+			background: linear-gradient(to bottom,  #ffffff 0%,#e4e1d2 100%);
+			}
+		#nav a.menuCurrent {
+		    position: relative;
+			background: #fdfbf6;
+			}
+		#nav a.menuCurrent span {
+			color: #333;
+			}
+			#nav.submenu a.menuCurrent span {
+			    border-bottom: 2px solid #fdfbf6;
+			    margin-bottom: -2px;
+				}
+			#nav.submenu a.menuCurrent span::after {
+			    display: none;
+				}
+		#nav a.menuCurrent span::after, #submenu a.active span::after, #submenu a:hover span::after {
+			content: " ";
+			position: absolute;
+			bottom: -9px;
+			left: 50%;
+			width: 20px;
+			height: 9px;
+			margin-left: -10px;
+			background: transparent url('../images/arr_menu.png') no-repeat 0px 0px;
+			}
+			#nav a span {
+				display: block;
+				padding:0 17px 0 20px;
+				border-right:1px solid #f5f3ee;
+				}
+			#nav a:first-child {border-left:1px solid #f5f3ee;}
+			#nav a:first-child span {border-left:1px solid #D1D0C7;}
+	#subnav {
+		float:right;
+		margin-right:20px;
+		}
+		#subnav a {
+			font-size:13px;
+			padding-top: 1px;
+			line-height:44px;
+			margin-left:40px;
+			}
+		#subnav a.underline:hover span {
+			color: #f8463d;
+			}
+        #subnav .iPhoneNumber{
+            color: #333333;
+            font-size: 14px;
+			font-weight: bold;
+            padding-left: 26px;
+            background: url('../images/icons.png') no-repeat 0px -2959px
+        }
+	#search {
+		float:right;
+		margin:10px 0 0 19px;
+		border:1px solid #D1D0C7;
+		border-radius:13px;
+		background-color:#F5F4EE;
+		box-shadow:0 1px 0 rgba(255,255,255,.30);
+		}
+		#search .input {
+			border:none;
+			border-radius:0;
+			background-color:transparent;
+			box-shadow:none;
+			width:195px;
+			height:22px;
+			font-size:12px;
+			line-height:22px;
+			color:#D1CFC3;
+			margin:0;
+			padding:0 0 0 11px;
+			outline:none;
+			}
+		#search .button {
+			border:none;
+			width:29px;
+			height:24px;
+			background:url(../images/icons.png) no-repeat 7px 6px;
+			}
+	.SignLogin {
+	    position: relative;
+		float:right;
+		margin: 15px 0px 0px 20px;
+		}
+		.SignLogin a {
+		    float: left;
+			}
+		.SignLogin .SignUp span {
+		    color: #efede5;
+		    text-shadow: 0px 1px 0px #f5473d;
+			padding: 0px 6px 0px 20px;
+			background:url(../images/icons.png) no-repeat 0 -22px;
+			}
+		.SignLogin .Login {
+		    padding-left:22px;
+			font-size: 13px;
+			background:url(../images/icons.png) no-repeat 4px -3304px;
+			}
+		.SignLogin .Login:hover {
+			background-position: 4px -3329px;
+			}
+		.SignLogin .Help{
+		    margin-right: 20px;
+		    padding-left:22px;
+		    font-size: 13px;
+		    background:url(../images/icons.png) no-repeat 4px -2046px;
+		    }
+		.SignLogin .Help:hover{
+		    background-position: 4px -2062px;
+		    }
+		.SignLogin .or{
+		    position: absolute;
+		    top: 5px;
+		    left: 88px;
+		    width: 19px;
+		    height: 17px;
+		    background:url(../images/header_or.png) no-repeat 0px 0px;
+		    }
+		/*@-moz-document url-prefix() { 
+		  .SignLogin .or {
+		     left: 89px;
+		  }
+		}*/
+	#HeadBl {
+	    position: relative;
+		float:right;
+		margin: 15px 0px 0px 0px;
+		}
+    	#HeadBl .Help{
+    	    padding-left:22px;
+    	    font-size: 13px;
+    	    background:url(../images/icons.png) no-repeat 4px -2046px;
+    	    }
+    	#HeadBl .Help:hover{
+    	    background-position: 4px -2062px;
+    	    }
+    	#HeadBl .LetterIcon{
+    	    position: relative;
+    	    display: inline-block;
+    	    width: 17px;
+    	    height: 12px;
+    	    margin-top: 2px;
+    	    margin-left: 28px;
+    	    background:url(../images/icons.png) no-repeat 0px -3750px;
+    	    }
+    	#HeadBl .Payment{
+    	    margin-right: 25px;
+    	    padding-left:25px;
+    	    font-size: 13px;
+    	    background:url(../images/icons.png) no-repeat 4px -3706px;
+    	    }
+    	#HeadBl .Payment:hover{
+    	    background-position: 4px -5281px;
+    	    }
+    	    #HeadBl .LetterIcon span{
+    	        font-size: 11px;
+    	        color: #fff;
+    	        line-height: 14px;
+    	        display: none;
+    	        position: absolute;
+    	        top: -7px;
+    	        right: -7px;
+    	        padding: 0px 4px;
+    	        background-color: #f8463d;
+    	        
+    	        -webkit-border-radius: 20px;
+    	        -moz-border-radius: 20px;
+    	        border-radius: 20px;
+    	        }
+        	#HeadBl .LetterIcon.active{
+        	    background-position: 0px -3783px;
+        	    }
+        	    #HeadBl .LetterIcon.active span{
+        	        display: block;
+        	        }
+	#Login {
+	    position: relative;
+	    float:right;
+	    margin-left:25px;
+	    z-index: 60;
+        top: 2px;
+	    }
+	    .loginAvatar{
+	        float: right;
+	        top: 2px;
+	        right: 0px;
+	        padding: 5px 5px 0px 5px;
+	        }
+	        .loginAvatar span{
+	            display: block;
+	            padding-right: 13px;
+	            background: transparent url('../images/avatar_arrow.png') no-repeat 35px -32px;
+	            cursor: pointer;
+	            }
+    .loginOpen .loginAvatar{
+        background-color: #fff;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, .2);
+        
+        -webkit-border-top-left-radius: 3px;
+        -webkit-border-top-right-radius: 3px;
+        -moz-border-radius-topleft: 3px;
+        -moz-border-radius-topright: 3px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        }
+        .loginOpen .loginAvatar span{
+            background-position: 35px -32px;
+            }
+    .loginMenu{
+        display: none;
+        position: absolute;
+        top: 35px;
+        right: 0px;
+        width: 174px;
+        padding: 5px 0px;
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, .2);
+        background-color: #fff;
+        
+        -webkit-border-radius: 3px;
+        -webkit-border-top-right-radius: 0;
+        -moz-border-radius: 3px;
+        -moz-border-radius-topright: 0;
+        border-radius: 3px;
+        border-top-right-radius: 0;
+        }
+        .loginMenu li.sep{
+            padding-top: 5px;
+            margin-top: 5px;
+            border-top: 1px solid #eeece5;
+            }
+        .loginMenu a{
+            font-size: 14px;
+            color: #333;
+            line-height: 14px;
+            display: block;
+            width: 139px;
+            padding: 6px 0px 6px 35px;
+            background-image:url(../images/icons.png);
+            background-repeat: no-repeat;
+            outline: none;
+            }
+            .loginMenu a.iDashboard{
+                background-position: 9px -319px;
+                }
+            .loginMenu a.iMessages{
+                background-position: 9px -3659px;
+                }
+            .loginMenu a.iMyClasses{
+                background-position: 9px -1940px;
+                }
+            .loginMenu a.iProfile{
+                background-position: 8px -1972px;
+                }
+            .loginMenu a.iSettings{
+                background-position: 10px -453px;
+                }
+            .loginMenu a.iLogOut{
+                background-position: 8px -2005px;
+                }
+        .loginMenu a:hover{
+            color: #333;
+            background-color: #e9e6e3;
+            }
+    .loginOpen .loginMenu{
+        display: block;
+        }
+			
+#submenu {
+	margin: -16px 0px 20px 0px;
+	padding:9px 10px 0px 10px;
+	background-color: #fdfbf6;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, .2);
+	border-top: 1px solid #e5ded2;
+
+	}
+	#submenu .sep {
+	    float: left;
+	    width: 1px;
+	    height: 9px;
+	    margin-top: 8px;
+	    background-color: #b5b2a3;
+	}			
+	#submenu a {
+	    position: relative;
+		float:left;
+		font-size:14px;
+		line-height:18px;
+		padding: 0px 18px 14px 26px;
+		margin: 4px 0px 0px 18px;
+		background-image:url(../images/ic_submenu.png);
+		background-repeat:no-repeat;
+		}
+	#submenu a.active {
+		color: #333;
+		}
+		#submenu a.active span{
+			border: none;
+			}
+	#submenu a:first-child {
+		margin-left: 0px;
+		}
+		#submenu a span {
+		    padding-top: 1px;
+		    }
+	#submenu .sm_my_packs {
+		background-position:0px 1px;
+		}
+	#submenu .sm_my_packs:hover {
+		background-position:0px -46px;
+		}
+	#submenu .sm_my_packs.active {
+		background-position:0px -91px;
+		}
+	#submenu .sm_messages {
+		background-position:-155px 0px;
+		}
+	#submenu .sm_messages:hover {
+		background-position:-155px -46px;
+		}
+	#submenu .sm_messages.active {
+		background-position:-155px -92px;
+		}
+	#submenu .sm_my_tutor {
+		background-position:-310px 0px;
+		}
+	#submenu .sm_my_tutor:hover {
+		background-position:-310px -46px;
+		}
+	#submenu .sm_my_tutor.active {
+		background-position:-310px -92px;
+		}
+	#submenu .sm_settings {
+		background-position:-465px 0px;
+		}
+	#submenu .sm_settings:hover {
+		background-position:-465px -46px;
+		}
+	#submenu .sm_settings.active {
+		background-position:-465px -92px;
+		}
+	#submenu .sm_lesson {
+		background-position:-623px 0px;
+		}
+	#submenu .sm_lesson:hover {
+		background-position:-623px -46px;
+		}
+	#submenu .sm_lesson.active {
+		background-position:-623px -92px;
+		}
+    #submenu .sm_my_lessons {
+        background-position:0px 0px;
+    }
+    #submenu .sm_my_lessons:hover {
+        background-position:0px -47px;
+    }
+    #submenu .sm_my_lessons.active {
+        background-position:0px -92px;
+    }
+    #submenu .sm_blog {
+        background-position:-763px 0px;
+    }
+    #submenu .sm_blog:hover {
+        background-position:-763px -47px;
+    }
+    #submenu .sm_blog.active {
+        background-position:-763px -92px;
+    }
+    #submenu .sm_aq {
+        background-position:-902px 0px;
+    }
+    #submenu .sm_aq:hover {
+        background-position:-902px -47px;
+    }
+    #submenu .sm_aq.active {
+        background-position:-902px -92px;
+    }
+    #submenu .sm_aq.active {
+        background-position:-902px -92px;
+    }
+    #submenu .sm_wft {
+        background-position:-1082px 0px;
+    }
+    #submenu .sm_wft:hover {
+        background-position:-1082px -47px;
+    }
+    #submenu .sm_wft.active {
+        background-position:-1082px -92px;
+    }
+    #submenu .sm_ref {
+        background-position:-1240px 0px;
+    }
+    #submenu .sm_ref:hover {
+        background-position:-1240px -47px;
+    }
+    #submenu .sm_ref.active {
+        background-position:-1240px -92px;
+    }
+    #submenu .smSearch{
+        font-size: 13px;
+        line-height: 16px;
+        float: right;
+        width: 188px;
+        height: 19px;
+        border: none;
+        padding: 2px 6px 3px 26px;
+        background-color: #fff;
+        background: #fff url('../images/icons.png') no-repeat 7px -5548px;
+        box-shadow: inset 0px 1px 2px rgba(0,0,0,.3);
+        
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+    }
+    #submenu input:-moz-placeholder {
+        color: #ccc;
+    }
+    
+    #submenu input:-ms-input-placeholder {
+        color: #ccc;
+    }
+    
+    #submenu input::-webkit-input-placeholder {
+        color: #ccc;
+    }
+
+	.ic_create{
+	    padding-left: 13px;
+	    background: transparent url('../images/icons.png') no-repeat 0px -2477px;
+	    }

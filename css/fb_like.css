@@ -1,0 +1,37 @@
+.fan_box .full_widget {
+    border: none!important;
+}
+.fan_box .full_widget .connect_top {
+    display: none;
+}
+.fan_box div.connections {
+    border:medium none #FFFFFF !important;
+    float:left;
+    margin:0;
+    overflow:hidden;
+    padding:0;
+    text-indent:-9999px;
+    width:646px;
+}
+.fan_box .connections{
+    min-height:35px;
+}
+.fan_box .connections .connections_grid {
+    text-indent: 0;
+    padding: 0;
+    margin-top: -14px;
+}
+.fan_box .connections_grid .grid_item {
+    padding:0 4px 2px 0;
+    width:34px;
+}
+.fan_box .connections_grid .grid_item a, .fan_box .connections_grid .grid_item a img {
+    display: block;
+}
+.fan_box .connections_grid .grid_item img {
+    width: 34px;
+    height: 34px;
+}
+.fan_box .connections_grid .grid_item .name {
+    display: none;
+}
