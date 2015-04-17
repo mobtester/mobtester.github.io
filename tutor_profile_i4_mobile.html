@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>teach_design</title>
+
+    <meta name="description" content="">
+    <meta name="keywords" content="" >
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/ico" >
+
+    <link href="fonts.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/960.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/header.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/fg.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/mobile.css" media="screen" rel="stylesheet" type="text/css">
+
+   <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+   <!--[if lt IE 9]><script type="text/javascript" src="js/html5.js"></script><![endif]-->
+   <script type="text/javascript" src="js/fg.js"></script>
+</head>
+
+<body>
+    <div class="popupOverlay" style="display: none;"></div>
+    
+    <div class="popupUA" style="display: none;"><!-- thank you -->
+        <div class="tnxUa">
+            <h2>Спасибо, ваш запрос отправлен!</h2>
+            <p>Все, что требуется от вас — оставить заявку с номером телефона и любой дополнительной информацией, которая может помочь в подборе репетитора.</p>
+        </div>
+        <a href="#" class="popupUaClose"></a>
+    </div>
+    
+    <div class="popupUA" style="display: none;">
+        <table class="popupData" cellpadding="0" cellspacing="0">
+            <tr>
+                <th></th>
+                <th><h1>Запрос урока</h1></th>
+            </tr>
+            <tr>
+                <td class="f tutorBlLeft">Репетитор:</td>
+                <td colspan="2" class="tutorBlRight">
+                    <div class="tutorInf">
+                        <img src="images/recycled/preply-ua-profile.jpg" alt="" />
+                        <div class="ml80">
+                            <h3>Оксана Тотовицька</h3>
+                            <p>Репетитор английского языка, Киев</p>
+                            <b>от <span>150</span> грн.</b>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <td class="f">Место занятий</td>
+                <td>
+                    <ul class="labelInline">
+                        <li><label><input type="radio" name="place_tutor" value="" checked="checked" /> На дому</label></li>
+                        <li><label><input type="radio" name="place_tutor" value="" /> У репетитора</label></li>
+                        <li><label><input type="radio" name="place_tutor" value="" /> Skype</label></li>
+                    </ul>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="f">Улица и номер дома:</td>
+                <td style="padding-bottom: 3px;">
+                    <input type="text" name="" value="Богдановская 2" />
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="f">Возраст ученика:</td>
+                <td>
+                    <select class="select">
+                        <option>Младшие классы</option>
+                        <option>Младшие классы</option>
+                        <option>Младшие классы</option>
+                        <option>Младшие классы</option>
+                    </select>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="f">Уровень ученика:</td>
+                <td>
+                    <select class="select">
+                        <option>Базовый письменный и разговорный</option>
+                        <option>Базовый письменный и разговорный</option>
+                    </select>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="f">Направления<br/>обучения:</td>
+                <td>
+                    <ul class="labelInline labelList">
+                        <li><label><input type="checkbox" name="" value="" /> Помощь с домашним заданием</label></li>
+                        <li><label><input type="checkbox" name="" value="" /> Подготовка к ЗНО</label></li>
+                        <li><label><input type="checkbox" name="" value="" /> TOEFL, IELTS и т.п.</label></li>
+                        <li><label><input type="checkbox" name="" value="" /> Английский для бизнеса</label></li>
+                    </ul>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="f">Время занятий:</td>
+                <td><textarea></textarea></td>
+                <td class="hintBlRight"><p>Например: Нужен репетитор для подготовки ребенка к ВНО (11 клас). Время занятий после 15:00.</p></td>
+            </tr>
+            <tr>
+                <td class="f">Имя</td>
+                <td>
+                    <input type="text" name="" value="" />
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="f">Номер телефона:</td>
+                <td><input type="text" name="" value="" /></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="f">Эл. почта:</td>
+                <td><input type="text" name="" value="" /></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <div class="blockButtonSendUa">
+                        <label><input type="checkbox" name="" value="" /> Рассмотрю предложения от других репетиторов</label>
+                        <a class="btn-disabled btn-medium" href="#" title=""><span>Отправить</span></a><!--replace "btn-disabled" -> "btn btn-danger" for active button-->
+                        <span>или <a href="#" class="underlineDotted"><span>отменить запрос</span></a>.</span>
+                        <span class="textBott">Осталось ввести «Номер телефона», «Имя».</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <a href="#" class="popupUaClose"></a>
+    </div>
+    
+    <div class="popupUA popupProfileUA" style="display: none;">
+        <table class="popupData" cellpadding="0" cellspacing="0">
+            <tr>
+                <th colspan="3">
+                    <h2>Связываемся с репетитором</h2>
+                    <p class="graySmall">После отправки мы незамедлительно доставим ваше сообщение и уточняющие детали<br/>
+                    на почту репетитору и уведомим его с помощью СМС.</p>
+                </th>
+            </tr>
+            <tr class="sepLine">
+                <td colspan="3"><h3>Шаг 1. Сообщение и контактная информация</h3></td>
+            </tr>
+            <tr>
+                <td class="f"><img src="images/recycled/preply-ua-profile.jpg" alt="" class="tutorAvatar" /></td>
+                <td>
+                    <textarea style="margin-top: -2px;"></textarea>
+                </td>
+                <td></td>
+            </tr>
+            <tr class="lineGray">
+                <td colspan="3" class="clt crt" style="height: 10px;"></td>
+            </tr>
+            <tr class="lineGray">
+                <td class="f clt">Имя</td>
+                <td>
+                    <input type="text" name="" value="" />
+                </td>
+                <td rowspan="3" class="crt vat"><p class="secGraySmall">Мы не передаем
+                персональные
+                данные без вашего
+                согласия</p></td>
+            </tr>
+            <tr class="lineGray">
+                <td class="f">Номер телефона</td>
+                <td>
+                    <input type="text" name="" value="" />
+                </td>
+            </tr>
+            <tr class="lineGray">
+                <td class="f">Эл. почта</td>
+                <td>
+                    <input type="text" name="" value="" />
+                </td>
+            </tr>
+            <tr class="lineGray">
+                <td colspan="3" class="clb crb"></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+            </tr>
+            <tr class="sepLine">
+                <td colspan="3">
+                    <h3>Шаг 2. Информация об ученике</h3>
+                    <p class="graySmall">Пожалуйста, уточните информацию об ученике для получения наиболее быстрого<br/>
+                    и конкретного ответа со стороны репетитора.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="f">Место занятий</td>
+                <td>
+                    <ul class="labelInline">
+                        <li><label><input type="radio" name="place_tutor" value="" checked="checked" /> На дому</label></li>
+                        <li><label><input type="radio" name="place_tutor" value="" /> У репетитора</label></li>
+                        <li><label><input type="radio" name="place_tutor" value="" /> Skype</label></li>
+                    </ul>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="f">Улица и дом:</td>
+                <td style="padding-bottom: 3px;">
+                    <input type="text" name="" value="Богдановская 2" />
+                </td>
+                <td class="hintBlRight hintBlRightInline"><p>Напр. Фучика, 9</p></td>
+            </tr>
+            <tr>
+                <td class="f">Возраст ученика:</td>
+                <td>
+                    <select class="select">
+                        <option>Младшие классы</option>
+                        <option>Младшие классы</option>
+                        <option>Младшие классы</option>
+                        <option>Младшие классы</option>
+                    </select>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="f">Уровень ученика:</td>
+                <td>
+                    <select class="select">
+                        <option>Базовый письменный и разговорный</option>
+                        <option>Базовый письменный и разговорный</option>
+                    </select>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="f">Направления<br/>обучения:</td>
+                <td>
+                    <ul class="labelInline labelList">
+                        <li><label><input type="checkbox" name="" value="" /> Помощь с домашним заданием</label></li>
+                        <li><label><input type="checkbox" name="" value="" /> Подготовка к ЗНО</label></li>
+                        <li><label><input type="checkbox" name="" value="" /> TOEFL, IELTS и т.п.</label></li>
+                        <li><label><input type="checkbox" name="" value="" /> Английский для бизнеса</label></li>
+                        <li><a href="#" class="underlineDotted fs12"><span>Показать еще</span> ↓</a></li>
+                    </ul>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="f">Время занятий:</td>
+                <td><textarea></textarea></td>
+                <td class="hintBlRight"><p>Укажите удобные дни<br/>
+                недели и время </p></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <div class="blockButtonSendUa">
+                        <label><input type="checkbox" name="" value="" /> Рассмотрю предложения от других репетиторов</label>
+                        <a class="btn-danger btn-medium" href="#" title=""><span>Отправить</span></a><!--replace "btn-disabled" -> "btn btn-danger" for active button-->
+                        <span>или <a href="#" class="underlineDotted"><span>отменить запрос</span></a>.</span>
+                        <!--span class="textBott">Осталось ввести «Номер телефона», «Имя».</span-->
+                        <div class="clearFix h30"></div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <a href="#" class="popupUaClose"></a>
+    </div>
+    
+    <div id="Wrap">
+    
+        <header id="Header">
+            <div class="WidthPage">
+                <a id="logo" href="#" title="Findguru">Findguru</a>
+                <div class="SignLogin">
+                    <span id="languageSelect" class="fl"><!-- add/remove class "tooltipContextOpen" for show/hide context menu -->
+                        <a href="#" class="underlineDashedBlack"><span>RU</span></a>
+                        <div class="tooltipContext">
+                            <span class="current">RU</span>
+                            <a href="#" class="underline"><span>EN</span></a>
+                        </div>
+                    </span>
+        			<!--a class="Login underline fl" href="/login" title="Войти"><span>Войти</span></a-->
+                </div>
+                <div id="Login" class="login"><!-- add/remove class "loginOpen" for show/hide context menu -->
+                    <div class="loginAvatar"><span><img src="./home_old_files/9c9b877a42e7442e8900ce4395d19133.jpg" alt="" width="30" height="30"></span></div>
+                    <ul class="loginMenu">
+                        <li><a href="http://stage.findguru.me/dashboard" class="iDashboard">Статистика</a></li>
+                        <li><a href="http://stage.findguru.me/messages" class="iMessages">Заявки</a></li>
+                        <li><a href="#" class="iMyClasses">Уроки</a></li>
+                        <li class="sep">
+                            
+                            <a href="http://stage.findguru.me/tutor/edit" class="iProfile">Профиль</a>
+                            
+                        </li>
+                        <li><a href="http://stage.findguru.me/settings" class="iSettings">Настройки</a></li>
+                        <li class="sep"><a href="http://stage.findguru.me/logout" class="iLogOut">Выйти</a></li>
+                    </ul>
+                </div>
+                <div id="HeadBl">
+                    <a class="Help underline fl" href="/login" title="Войти"><span>Помощь</span></a>
+                    <a class="LetterIcon active" href="#"><span>3</span></a><!-- add/remove class "active" for show/hide counter -->
+                </div>
+                <div id="currentCity" class=""><!--add and remove class "tooltipContextOpen" for show and hide menu | add class "skypeIcon" for skype tutor select-->
+                    <a href="#" class="underlineDashedBlack linkContextMenu"><span>Днепропетровск</span></a>
+                    <div class="tooltipContext">
+                        <a href="#" class="underline skypeTutor"><span>Скайп-репетиторы</span></a>
+                        <div class="clearFix"></div>
+                        <a href="#" class="underline"><span>Киев</span></a>
+                        <a href="#" class="underline"><span>Одесса</span></a>
+                        <a href="#" class="underline"><span>Харьков</span></a>
+                        <b>Днепропетровск</b>
+                        <a href="#" class="underline"><span>Донецк</span></a>
+                        <a href="#" class="underline"><span>Львов</span></a>
+                    </div>
+                </div>
+                <nav id="nav" class="submenu">
+                    <a href="#" title="Learn"><span>Мой кабинет</span></a>
+                    <a href="#" title="Videos"><span>Поиск репетитора<span></a>
+                </nav>
+        	    <!--div id="subnav">
+        			<span class="iPhoneNumber"> 050 444 33 40</span>
+        			<a class="iRequest underlineDashed" href="#"  id="id_leave_generic_request" title="оставить заявку"><span>Оставить заявку</span></a>
+        		</div-->
+            </div>
+        </header>
+        
+
+        <div id="Main"><!-- smallcol-right or smallcol-left -->
+            <div class="WidthPage">
+                <!-- breadcrumb -->
+                <div class="breadcrumb">
+                	<!--div class="share">
+                    	<span class="text">Рекомендовать друзьям:</span>
+                        <a class="bc_fb" href="#" title="Facebook"></a>
+                        <a class="bc_tw" href="#" title="Twitter"></a>
+                        <a class="bc_mail" href="#" title="Mail"></a>
+                    </div-->
+                	<a class="back underline" href="#"><span>Вернуться к поиску</span></a>
+                </div>
+                <!-- end breadcrumb -->
+                <div class="Block">
+                    <!--div class="tutorInfo clearFix">
+                        <div class="basicInfoBlock">
+                            <div class="basicInfoPhoto">
+                                <img src="images/recycled/preply-ua-profile.jpg" alt="" />
+                            </div>
+                            <div class="basicInfo">
+                                <h2>Дарья Константинопольская</h2>
+                                <p>Молодой и прогрессивный репетитор с 8-летним
+                                опытом работы</p>
+                                <div class="ratingBlock">
+                                    <ul class="rating onestar">
+                                    	<li class="one"><a href="#" title="1 Star">1</a></li>
+                                    	<li class="two"><a href="#" title="2 Stars">2</a></li>
+                                    	<li class="three"><a href="#" title="3 Stars">3</a></li>
+                                    	<li class="four"><a href="#" title="4 Stars">4</a></li>
+                                    	<li class="five"><a href="#" title="5 Stars">5</a></li>
+                                    </ul>
+                                    <a href="#" class="underline linkReviews"><span>0 отзывов</span></a>
+                                </div>
+                                <p class="pl"><div class="icProfLocation"><a href="#" class="underline"><span>м. Вокзальная</span></a> <a href="#" class="underline"><span>(Соломенский р-н)</span></a></div></p>
+                                <p class="pl"><div class="icProfCar"><a href="#" class="underline"><span>м. Университет</span></a> <a href="#" class="underline"><span>(Шевченковский р-н)</span></a></div></p>
+                                <p class="pl"><span class="icProfSkype">Уроки в скайпе:</span> Да</p>
+                            </div>
+                        </div>
+                        <div class="tutorInfoPrice">
+                            <p>Стоимость часа (60 мин):</p>
+                            <p class="priceText">от 150 грн.</p>
+                            <a class="btn btn-danger" href="#" title="Запрос урока"><span>Запрос урока</span></a>
+                            <a class="btn btn-info " href="#" title="Отправить сообщение"><span>Отправить сообщение</span></a>
+                        </div>
+                    </div-->
+                    <div class="tutorInfoMoreBlock clearFix">
+                        <div class="tutorInfoRight">
+                            <h2>Александр Борисович</h2>
+                            <div class="ratingBlock">
+                                <div class="ratingBl">
+                                    <img src="images/star_red.png" alt="" />
+                                    <img src="images/star_red.png" alt="" />
+                                    <img src="images/star_red.png" alt="" />
+                                    <img src="images/star_mitad.png" alt="" />
+                                    <img src="images/star_empty.png" alt="" />
+                                    <a href="#" class="underline ml5"><span>2 отзыва</span></a>
+                                </div>
+                            </div>
+                            <b>Опытный репетитор английского для подростков,  взрослых (общий, деловой, юридический, финансовый)</b>
+                            <div class="tutorKeyInfo">
+                                <table cellpadding="0" cellspacing="0" class="tutorKeyInfoTbl">
+                                    <tr>
+                                        <td><div class="icProfLocation">Уроки у репетитора:</div></td>
+                                        <td><a href="#" class="tagButton "><i class="metroLineMenuDarkBlue"></i>Площадь Льва Толстого</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="icProfCar">Выездные уроки:</div></td>
+                                        <td><a href="#" class="tagButton"><i class="metroLineMenuLightRed"></i>Арсенальная</a><a href="#" class="tagButton"><i class="metroLineMenuLightRed"></i>Хрещатик</a><a href="#" class="tagButton"><i class="metroLineMenuLightRed"></i>Вокзальная</a><a href="#" class="tagButtonMore">Еще 26</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="icProfSkype">Уроки в скайпе:</div></td>
+                                        <td><b>Часовой пояс: UTC+4</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="icTrust">Пробный урок:</div></td>
+                                        <td><b>Бесплатно</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="icExperience">Опыт преподавания:</div></td>
+                                        <td><b>7 лет</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="icAge">Групповые занятия:</div></td>
+                                        <td><b>2-5 человек</b></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="tutorKeyInfo">
+                                <table cellpadding="0" cellspacing="0" class="tutorKeyInfoTbl">
+                                    <tr>
+                                        <td><div class="icProfLocation">Уроки у репетитора:</div></td>
+                                        <td><a href="#" class="tagButton "><i class="metroLineMenuDarkBlue"></i>Площадь Льва Толстого</a></td>
+                                    </tr>
+                                    <tr class="moreInfoLine">
+                                        <td><div class="icProfCar">Выездные уроки:</div></td>
+                                        <td>
+                                            <b class="clearFix">Станции метро</b>
+                                            <a href="#" class="tagButton"><i class="metroLineMenuLightRed"></i>Университет</a><a href="#" class="tagButton"><i class="metroLineMenuLightRed"></i>Хрещатик</a><a href="#" class="tagButton"><i class="metroLineMenuLightRed"></i>Вокзальная</a><a href="#" class="tagButton "><i class="metroLineMenuDarkBlue"></i>Площадь Льва Толстого</a><a href="#" class="tagButton "><i class="metroLineMenuDarkBlue"></i>Олимпийская</a><a href="#" class="tagButton "><i class="metroLineMenuDarkBlue"></i>Дворец Украина</a>
+                                            <b class="clearFix">Административные районы</b>
+                                            <a href="#" class="tagButton">Голосеевский</a><a href="#" class="tagButton">Деснярский</a><a href="#" class="tagButton">Соломенский</a>
+                                            <b class="clearFix">Микрорайоны</b>
+                                            <a href="#" class="tagButton">Академгородок</a><a href="#" class="tagButton">КПИ</a><a href="#" class="tagButton">Нивки</a><br/>
+                                            <a href="#" class="underlineDashed showLess"><span>Свернуть</span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="icProfSkype">Уроки в скайпе:</div></td>
+                                        <td><b>Часовой пояс: UTC+4</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="icTrust">Пробный урок:</div></td>
+                                        <td><b>Бесплатно</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="icExperience">Опыт преподавания:</div></td>
+                                        <td><b>7 лет</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="icAge">Групповые занятия:</div></td>
+                                        <td><b>2-5 человек</b></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="tutorInfoTabsUA clearFix">
+                                <a href="#"><span>О репетиторе</span></a>
+                                <a href="#" class="current"><span>Отзывы (2)</span></a>
+                            </div>
+                            
+                            <div class="ratingsBlock clearFix">
+                                <ul>
+                                    <li>
+                                        <div class="title">Результативность</div>
+                                        <div class="ratingBl">
+                                            <img src="images/star_red.png" alt="" />
+                                            <img src="images/star_red.png" alt="" />
+                                            <img src="images/star_red.png" alt="" />
+                                            <img src="images/star_mitad.png" alt="" />
+                                            <img src="images/star_empty.png" alt="" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title">Подход</div>
+                                        <div class="ratingBl">
+                                            <img src="images/star_red.png" alt="" />
+                                            <img src="images/star_red.png" alt="" />
+                                            <img src="images/star_red.png" alt="" />
+                                            <img src="images/star_mitad.png" alt="" />
+                                            <img src="images/star_empty.png" alt="" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title">Методика</div>
+                                        <div class="ratingBl">
+                                            <img src="images/star_red.png" alt="" />
+                                            <img src="images/star_red.png" alt="" />
+                                            <img src="images/star_red.png" alt="" />
+                                            <img src="images/star_mitad.png" alt="" />
+                                            <img src="images/star_empty.png" alt="" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title">Строгость</div>
+                                        <div class="ratingBl">
+                                            <img src="images/star_red.png" alt="" />
+                                            <img src="images/star_red.png" alt="" />
+                                            <img src="images/star_red.png" alt="" />
+                                            <img src="images/star_mitad.png" alt="" />
+                                            <img src="images/star_empty.png" alt="" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title">Мотивация</div>
+                                        <div class="ratingBl">
+                                            <img src="images/star_red.png" alt="" />
+                                            <img src="images/star_red.png" alt="" />
+                                            <img src="images/star_red.png" alt="" />
+                                            <img src="images/star_mitad.png" alt="" />
+                                            <img src="images/star_empty.png" alt="" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title">Пунктуальность</div>
+                                        <div class="ratingBl">
+                                            <img src="images/star_red.png" alt="" />
+                                            <img src="images/star_red.png" alt="" />
+                                            <img src="images/star_red.png" alt="" />
+                                            <img src="images/star_mitad.png" alt="" />
+                                            <img src="images/star_empty.png" alt="" />
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="messages messagesReviews">
+                            	<!-- message -->
+                            	<div class="message clearfix">
+                            	    <img class="reviewQuote" src="images/review_quote.png" alt="">
+                            	    <div class="date">17 мая, 2012</div>
+                            	    <div class="name">Елена</div>
+                            	    <div class="clearFix"><span class="tagStyle">Английский для бизнеса</span><span class="tagStyle">Разговорный</span></div>
+                            	    <p>Занимаюсь с Александром Борисовичем уже полтора года, за этот период существенно заметила что уровень английского поднялся. Очень радует что на занятиях основное место отводится разговорному английскому. На уроках занимаемся и грамматикой, и обсуждением статей, книг. Урок проходит быстро и с результатом. Очень рада что занимаюсь с ним!</p>
+                            	</div>
+                            	<!-- end message -->
+                                
+                                <!-- message -->
+                                <div class="message clearfix">
+                                    <img class="reviewQuote" src="images/review_quote.png" alt="">
+                                    <div class="date">18 мая, 2012</div>
+                                    <div class="name">Кирилл</div>
+                                    <div class="clearFix"><span class="tagStyle">TOEFL</span><span class="tagStyle">ESL</span></div>
+                                    <p>Очень понравилась новомодная, по крайней мере для меня, тема, заниматься с репетитором по скайпу. Действительно экономит кучу времени которую обычно приходится тратить на дoрогу туда и обратно. Если в ваших планах есть сдача определенных тестов на английском, можете рассчитывать на Дашу. Благодаря ей я сдала TOEFL!</p>
+                                </div>
+                                <!-- end message -->
+                            </div><!-- end messages -->
+                            
+                            <ul style="display: none;">
+                                <li>
+                                    <h4 class="icVideo">Видео презентация</h4>
+                                    <iframe width="560" height="315" src="http://www.youtube.com/embed/CQrjugxZLUY" frameborder="0" allowfullscreen></iframe>
+                                </li>
+                                <li>
+                                    <h4 class="icSpec">Направления обучения</h4>
+                                    <b class="title">Разговорный английский</b>
+                                    <p>Я имею огромный опыт преподавания для различных возрастов и уровней владения языком. Брался за самых сложных учеников и всегда помогал им достичь поставленной цели.</p>
+                                    <b class="title">Английский для бизнеса</b>
+                                    <p>Нахожу индивидуальный подход к каждому ученику независимо от возраста и составляю для него персональный график занятий и материала. Очевидный результат уже на первом занятии.</p>
+                                </li>
+                                <li>
+                                    <h4 class="icAddInfo">О себе</h4>
+                                    <p>Я имею огромный опыт преподавания для различных возрастов и уровней владения языком. Брался за самых сложных учеников и всегда помогал им достичь поставленной цели.</p>
+                                    
+                                    <p>Я научу Вас понимать английский язык, а не просто его заучивать.</p>
+                                    
+                                    <p>Нахожу индивидуальный подход к каждому ученику независимо от возраста и составляю для него персональный график занятий и материала.</p>
+                                    
+                                    <p>Очевидный результат уже на первом занятии.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tutorInfoLeft">
+                            
+                            <div class="tutorInfoBl">
+                                <img src="images/recycled/preply-ua-profile.jpg" alt="" width="200" height="200" class="tutorPicture" />
+                                <span class="gray">Стоимость занятий (90 мин):</span>
+                                <b class="price">от <span>250</span> грн.</b>
+                                <a class="btn btn-danger" href="#" title="Запрос урока"><span>Отправить заявку</span></a><br/>
+                                <span class="hintBlock"><!-- add class "hintBlockActive" for show hint -->
+                                    <a href="#" class="underline iHowItWorks"><span>Что произойдет дальше?</span></a>
+                                    <span class="hint hintDetails">
+                                        <h3>Что произойдет дальше?</h3>
+                                        <p class="iDocWN">Перед вами откроется форма заявки, которую необходимо заполнить для связи с репетитором.</p>
+                                        <p class="iChatWN">Если вам необходимо уточнить дополнительные детали, вы можете написать репетитору сообщение.</p>
+                                        <p class="iCreditWN">В случае подтверждения заявки вы сможете оплатить первый урок с репетитором, после чего система обменяет вас контактами.</p>
+                                        <p class="iGuarantyWN">Если назначенный урок не состоялся по независящим от вас обстоятельствам, мы вернем ваши деньги.</p>
+                                        <a href="#" class="closeHint"></a>
+                                    </span>
+                                </span>
+                                <!--i class="iClock">Среднее время</i><br/>
+                                <i>ответа на заявку: <span>3 часа</span></i-->
+                            </div>
+                            <ul>
+                                <li>
+                                    <span class="title icSchedule">Дни занятий</span>
+                                    <div class="scheduleDay clearFix">
+                                        <span>пн</span>
+                                        <span class="current">вт</span>
+                                        <span class="current">ср</span>
+                                        <span class="current">чт</span>
+                                        <span>пт</span>
+                                        <span class="current">сб</span>
+                                        <span>вс</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="title icEducation">Образование</span>
+                                    <p class="title">Национальный Технический Университет Украины "КПИ"</p>
+                                    <p>Филолог, английский язык и зарубежная литература</p>
+                                    <p class="gray">2009 — Сегодняшний день</p>
+                                </li>
+                                <li>
+                                    <span class="title icExperience">Опыт преподавания</span>
+                                    <p class="title">МГУ им. М.В. Ломоносова</p>
+                                    <p>филологический факультет</p>
+                                    <p class="gray">2009 — 2012</p>
+                                </li>
+                                <li>
+                                    <span class="title icTrust">Верификация</span>
+                                    <div class="trustSocial">
+                                        <p class="trustSocialFb">317 друзей</p>
+                                        <p class="trustSocialTw">568 фолловеров</p>
+                                        <p class="trustSocialLi">184 контакта</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--! end of Main -->
+
+    </div><!--! end of #Wrap -->
+
+    <!-- Extended Footer -->    
+    <div class="overFooter">
+        <div class="container_12">
+            <div class="grid_3">
+                <h4>Города</h4>
+                <ul>
+                    <li><a href="#" title="About Us"><span>Москва</span></a></li>
+                    <li><a href="#" title="Search a tutor"><span>Санкт-Петербург</span></a></li>
+                    <li><a href="#" title="Blog"><span>Киев</span></a></li>
+                    <li><a href="#" title="Contact us"><span>Минск</span></a></li>
+                    <li><a href="#" title="About Us"><span>Харьков</span></a></li>
+                    <li><a href="#" title="Search a tutor"><span>Екатеринбург</span></a></li>
+                    <li><a href="#" title="Blog"><span>Новосибирск</span></a></li>
+                    <li><a href="#" title="Contact us"><span>Алма-Ата</span></a></li>
+                </ul>
+                <a class="underline" href="#"><span>Все города</span></a>
+            </div>
+            <div class="grid_3">
+                <h4>Специализации</h4>
+                <ul>
+                    <li><a href="#" title="How It Works"><span>Английский по Скайпу</span></a></li>
+                    <li><a href="#" title="Support Center"><span>Английский с носителями</span></a></li>
+                    <li><a href="#" title="Contact Us"><span>Подготовка к TOEFL</span></a></li>
+                    <li><a href="#" title="Terms Of Use"><span>Подготовка к IELTS</span></a></li>
+                    <li><a href="#" title="Privacy Policy"><span>Подготовка к ЗНО</span></a></li>
+                    <li><a href="#" title="How It Works"><span>Английский для детей</span></a></li>
+                    <li><a href="#" title="Support Center"><span>Разговорный английский</span></a></li>
+                    <li><a href="#" title="Contact Us"><span>Бизнес английский</span></a></li>
+                    <li><a href="#" title="Terms Of Use"><span>Подготовка к ЕГЭ</span></a></li>
+                    <li><a href="#" title="Contact Us"><span>Интенсив английского языка</span></a></li>
+                    <li><a href="#" title="Terms Of Use"><span>Английский с нуля</span></a></li>
+                </ul>
+                <a class="underline" href="#"><span>Все специализации</span></a>
+            </div>          
+            <div class="grid_3">
+                <h4>О нас</h4>
+                <ul>
+                    <li><a href="#" title="ACT General"><span>Как это работает</span></a></li>
+                    <li><a href="#" title="Writing"><span>Помощь</span></a></li>
+                    <li><a href="#" title="Reading"><span>Отзывы о платформе</span></a></li>
+                </ul>
+                <h4>Ресурсы</h4>
+                <ul>
+                    <li><a href="#" title="Science Reasoning"><span>Блог</span></a></li>
+                    <li><a href="#" title="Math"><span>Вопросы и ответы</span></a></li>
+                </ul>
+                <h4>Мы в соцсетях</h4>
+                <div class="socialButton socialButtonInline clearFix">
+                    <a href="#" class="vk"><span>&nbsp;</span></a>
+                    <a href="#" class="fbook"><span>&nbsp;</span></a>
+                    <a href="#" class="tweet"><span>&nbsp;</span></a>
+                    <a href="#" class="gplus"><span>&nbsp;</span></a>
+                    <a href="#" class="pinterest"><span>&nbsp;</span></a>
+                </div>
+            </div>          
+            <div class="grid_3">
+                <h4>Контакты</h4>
+                <div class="footerFlag ruFlag">Россия</div>
+                <div class="footerPhone">+7 (495) 204 29 82</div>
+                <div class="footerAdres">Москва, 5-й Донской пр., 15, строение 5</div>
+                
+                <div class="footerSep"></div>
+
+                <div class="footerFlag uaFlag">Украина</div>
+                <div class="footerPhone">+38 (044) 392 29 82</div>
+                <div class="footerAdres">Киев, ул.Жилянская, 75, б/ц Евразия, 4-й этаж, офис Eastlabs</div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- End of Extended Footer -->
+    
+    <footer id="Footer">
+        <div class="WidthPage">        
+            <div id="copyright">&copy; 2012-2014 FindGuru, Inc.</div>
+            <div class="shareWithFriends">
+                <p>Поделиться с друзьями:</p>
+                <div><img src="images/recycled/fb.png" alt="" /></div>
+                <div><img src="images/recycled/tweet.png" alt="" /></div>
+                <div><img src="images/recycled/g_plus.png" alt="" /></div>
+            </div>      
+        </div>
+    </footer>
+    
+</body>
+</html>
